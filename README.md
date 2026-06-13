@@ -1,16 +1,42 @@
-# React + Vite
+# Image Resizer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A lightweight browser-based image resizer built with React and Vite. Resize photos under 1 MB for GitHub, LinkedIn, and social media profile pictures.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Drag and drop or click to upload
+- Adjustable max dimension (100–1000px)
+- Adjustable quality (10–100%)
+- Real-time file size comparison (original vs output)
+- Circular preview to match how profile pics display
+- One-click download
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- Vite
+- JavaScript
+- Canvas API
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+git clone https://github.com/makayo/image-resizer.git
+cd image-resizer
+npm install
+npm run dev
+```
+
+Open `http://localhost:5173` in your browser.
+
+## Usage
+
+1. Drop an image or click to select
+2. Adjust the max dimension and quality sliders
+3. Click Resize
+4. Verify output is under 1 MB (green = good)
+5. Click Download
+
+## License
+
+MIT
